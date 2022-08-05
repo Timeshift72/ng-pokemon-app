@@ -12,11 +12,4 @@ import { Component} from '@angular/core';
   styles: [
   ]
 })
-export class PageNotFoundComponent {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class PageNotFoundComponent {}

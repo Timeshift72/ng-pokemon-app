@@ -17,7 +17,7 @@ export class DetailPokemonComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private pokemonService: PokemonService
+    private pokemonService: PokemonService,
   ) { }
 
   ngOnInit() {
@@ -31,6 +31,10 @@ export class DetailPokemonComponent implements OnInit {
 
   goToPokemonList() {
     this.router.navigate(['/pokemons']);
+  }
+
+  goToEditPokemon(pokemon:Pokemon) {
+    this.router.navigate(['edit/pokemons', pokemon.id]);
   }
 
 }
